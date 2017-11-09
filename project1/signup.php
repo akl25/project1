@@ -35,6 +35,14 @@ function http_error($message)
     die($message);
 }
 
+$fname = $_POST["inputFirstName"];
+$lname = $_POST["inputLastName"];
+$email = $_POST["inputEmail"];
+$password = $_POST["inputPassword"];
+$phone = $_POST["inputPhoneNum"];
+$birthday = $_POST["inputBirthday"];
+$gender = $_POST["inputFirstName"];
+
 ?>
 
 <!DOCTYPE html>
@@ -78,9 +86,9 @@ function http_error($message)
 
         <div class="gender-radio">
         <label class="gender-label">Gender (Choose an option):</label><br>
-        	<label><input type="radio" name="optradio" required>Male</label>
-        	<label><input type="radio" name="optradio" required>Female</label>
-            <label><input type="radio" name="optradio" required>Other</label>
+        	<label for="male"><input type="radio" name="gender" id="male" value="male" required>Male</label>
+        	<label for="female"><input type="radio" name="gender" id="female" value="female" required>Female</label>
+            <label for="other"><input type="radio" name="gender" id="other" value="other" required>Other</label>
         </div>
 
         <button class="btn-lg btn-primary btn-block" type="submit" id="submitButton">Complete Registration</button>

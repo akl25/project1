@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +30,9 @@
         <label for="inputEmail">Email:</label>
         <input type="email" class="form-control" id="inputEmail" placeholder="Enter Email Address" name="inputEmail" required />
 
+        <label for="inputPassword">Password:</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Enter Password" name="inputPassword" required />
+
         <label for="inputPhoneNum">Phone Number:</label>
         <input type="text" class="form-control" id="inputPhoneNum" placeholder="Enter Phone Number (ex. 123-456-7890)" name="inputPhoneNum" required />
 
@@ -36,8 +41,9 @@
 
         <div class="gender-radio">
         <label class="gender-label">Gender (Choose an option):</label><br>
-        	<label><input type="radio" name="optradio" required>Male</label><br>
+        	<label><input type="radio" name="optradio" required>Male</label>
         	<label><input type="radio" name="optradio" required>Female</label>
+            <label><input type="radio" name="optradio" required>Other</label>
         </div>
 
         <button class="btn-lg btn-primary btn-block" type="submit" id="submitButton">Complete Registration</button>
